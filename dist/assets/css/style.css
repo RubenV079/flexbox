@@ -1,0 +1,130 @@
+body {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container {
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+.container__box-left {
+  height: 100%;
+  width: 20%;
+  margin: .5% auto;
+  display: flex;
+  background-color: darkgrey;
+}
+.container__box-container {
+  height: 100%;
+  width: 40%;
+  margin: .5% 1%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.container__box-container__top {
+  height: 48.5%;
+  width: 100%;
+  background-color: darkgrey;
+}
+.container__box-container__bottom {
+  height: 48.5%;
+  width: 100%;
+  background-color: darkgrey;
+}
+.container__box-right {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  background-color: darkgrey;
+  margin: .5% auto;
+}
+
+.container2 {
+  height: 46%;
+  width: 100%;
+  margin: 1.5% auto;
+  display: flex;
+  justify-content: space-between;
+}
+.container2__box-left {
+  height: 100%;
+  width: 55%;
+  margin-right: .5%;
+  background-color: darkgrey;
+}
+.container2__box-right {
+  height: 100%;
+  width: 45%;
+  margin-left: .5%;
+  background-color: darkgrey;
+}
+
+@media only screen and (max-width: 650px) {
+  body {
+    margin: 0 auto;
+    overflow: scroll;
+  }
+
+  .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container__box-left {
+    height: 200px;
+    width: 100%;
+    margin: 1% auto;
+    display: flex;
+    object-fit: cover;
+  }
+  .container__box-container {
+    height: 400px;
+    width: 100%;
+    margin: 1% auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .container__box-container__top {
+    height: 48.5%;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: .5%;
+  }
+  .container__box-container__bottom {
+    height: 48.5%;
+    width: 100%;
+    object-fit: cover;
+    margin-top: .5%;
+  }
+  .container__box-right {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    background-color: darkgrey;
+    margin: 1% auto;
+    object-fit: cover;
+  }
+
+  .container2 {
+    height: 400px;
+    width: 100%;
+    margin: 1.5% auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .container2__box-left {
+    height: 49%;
+    width: 100%;
+    margin-right: .5%;
+    object-fit: cover;
+  }
+  .container2__box-right {
+    height: 49%;
+    width: 100%;
+    margin-left: .5%;
+    object-fit: cover;
+  }
+}
